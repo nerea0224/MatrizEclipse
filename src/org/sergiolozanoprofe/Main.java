@@ -22,13 +22,7 @@ public class Main {
 		}
 
 		// Mostrar la matriz creada
-		System.out.println("Matriz creada:");
-		for (int i = 0; i < columnas; i++) {
-			for (int j = 0; j < filas; j++) {
-				System.out.print(matriz[i][j] + "\t");
-			}
-			System.out.println();
-		}
+		mostrarMatriz(filas, columnas, matriz);
 
 		// Invertir cada fila
 		for (int i = 0; i < filas; i++) {
@@ -55,6 +49,16 @@ public class Main {
 		}
 
 		sc.close();
+	}
+
+	private static void mostrarMatriz(int filas, int columnas, int[][] matriz) {
+		System.out.println("Matriz creada:");
+		for (int i = 0; i < columnas; i++) {
+			for (int j = 0; j < filas; j++) {
+				System.out.print(matriz[i][j] + "\t");
+			}
+			System.out.println();
+		}
 	}
 
 }
